@@ -3,34 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>Page</title>
+  <link rel="stylesheet" href="../../TestRepo/style.css">
 </head>
 
-<body  bgcolor="#f2f2f2">
-
-  <header class="header">
-     <h1>Shop</h1>
+<body>
+  <div class="container">
+  <header class="header header-footer">
+       <div class="header_logo"><img src="../../TestRepo/img/logo12.png"  title="STORE" width="130px"></div>
     <nav class="nav">
-      <a href="../../TestRepo/HomePage.html" class="nav_link">Главная</a>
-      <a href="../../TestRepo/Catalog.html" class="nav_link" class="nav_link">Каталог</a>
-      <a class="nav_link" href="../../TestRepo/About.html" class="nav_link">О нас</a>
+      <a href="../../TestRepo/HomePage.html" class="nav_link link">Главная</a>
+      <a href="../../TestRepo/Catalog.html" class="nav_link link" class="nav_link">Каталог</a>
+      <a href="../../TestRepo/About.html" class="nav_link link">О нас</a>
     </nav>
   </header>
-<hr>
   <div class="products">
-    <img src="../../TestRepo/img/Basquiat.jpg" class="book">
-    <div class="name">
-    <h3>Skira</h3>
+   <img src="../../TestRepo/img/Basquiat.jpg" class="book ">
+    <div class="name-description">
+      <h3 class="name">Skira</h3>
+    <div class="description">
+      <p>Данное издание - хронологическая презентация избранных работ художника, которая включает в себя около пятидесяти картин, двадцать рисунков, совместные работы с Энди Уорхолом и Франческо Клементе. Также на страницах книги представлены эксклюзивные полотна, заказанные Бруно Бишофбергером, европейским представителем Баскии, из Цюриха.</p>
     </div>
-
-
+    <button class="button">BUY</button>
   </div>
-  <hr>
-  <footer>
+  </div>
+
+
+  <footer class="footer header-footer">
     <p><br>Контакт центр.<br>+1 (234) 567-89-10   +1 (324) 775-83-56<br>Ежедневно с 9:00 до 22:00 по Московскому времени</p>
 
   <p>Интересующие вас вопросы Вы можете написать нам на почту
     store@store.ru</p>
   <p>© Ермолаева Елена, 2021</p>
 </footer>
+</div>
 </body>
 </html>
