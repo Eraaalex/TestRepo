@@ -1,0 +1,92 @@
+/* Page */
+.picture_in_page{
+  width: 95%;
+  margin: 0 2% 0 2%;
+}
+.products{
+  display: inline-block;
+}
+
+.name-description{
+  margin-left: 0px;
+  width:95%;
+  max-height: 350px;
+  font-size: 11px;
+}
+
+.description{
+  padding: 0 7px 0 15px;
+
+
+  font-size: 11px;
+  width:95%;
+   margin-right: 10px; }
+
+
+
+     <div id="preloader_malc">
+
+     	<div>
+
+     		С
+
+     	</div>
+
+     </div>
+
+     <style type="text/css">
+     	#preloader_malc {
+     		position: fixed;
+     		top: 0;
+     		left: 0;
+     		right: 0;
+     		bottom: 0;
+     		background: rgba(0, 0, 0, .6);
+     		z-index: 99;
+
+     	}
+       #preloader_malc div:hover{
+         -o-transform: scale(1.2, 0.5);
+           -ms-transform: scale(1.2, 0.5);
+           -moz-transform: scale(1.2, 0.5);
+           -webkit-transform: scale(1.2, 0.5);
+           transform: scale(1.2, 0.5);
+       }
+     	#preloader_malc div {
+     		background: #fff;
+     		width: 60px;
+     		height: 60px;
+
+     		border-radius: 100%;
+     		font-family: arial;
+     		font-size: 15px;
+     		color: #111;
+     		text-align: center;
+     		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+     		position: fixed;
+     		z-index: 999;
+     		top: 0;
+     		left: 0;
+     		right: 0;
+     		bottom: 0;
+     		margin: auto;
+         -o-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -webkit-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+     	}
+     </style>
+
+     <script type="text/javascript">
+
+     	window.onload = function() {
+
+     		setTimeout(function() {
+
+     			document.getElementById("preloader_malc").style.display = "none";
+
+     		}, 10000);
+
+     	};
+
+     </script>
