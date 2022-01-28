@@ -1,0 +1,14 @@
+{% extends "Header-Footer.html" %}
+{% block content %}
+       <div class="products">
+      <div class="picture_on_page">  <img src="{{ url_for('static',filename='/img/' +item.img) }}" class="book_pr"></div>
+      <div class="name-description">
+        <h3>{{item.name}}</h3>
+
+      <div class="description">
+    <p> {{item.description}} </p>
+      </div>
+       <button class="button">BUY</button>
+</div>
+    </div>
+{% endblock %}

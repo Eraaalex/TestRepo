@@ -1,0 +1,25 @@
+{% extends "Header-Footer.html" %}
+    {% block content %}
+      <div class="About">
+        <h1>Добро пожаловать в наш интернет-магазин!</h1>
+
+      <h3>Здесь Вы можете оставить свой честный отзыв о нашем сотрудничестве с Вами.</h3>
+
+    <!--  ЗДЕСЬ ОТЗЫВ -->
+    <div class="form_Comment">
+      <form method="post" class="formAbout">
+       <!-- <h3>Напишите нам</h3> -->
+       <input type="text" name="name" placeholder="Ваше имя" class="input"> <br>
+       <br>
+       <input type="email" name="email" placeholder="Ваша почта"  class="input" required><br>
+       <br>
+       <textarea name="review" id="" cols="50" rows="8" placeholder="Опишите наши достоинства и недостатки, мы к вам прислушаемся и улучшим работу"  class="input textarea"></textarea>
+       <br>
+      <div class="container_for_button">
+       <input type="submit" class="btnAbout">
+       <input type="reset" class="btnAbout"></div>
+
+      </form>
+    </div>
+  </div>
+  {% endblock %}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+    <meta charset="UTF-8">
+    </head>
+<body>
+    <div class="container">
+        <header class="header header-footer">
+        <div class="header_logo_block">
+        <img src="{{ url_for('static', filename='img/logo12.png') }}" class="header_logo"   title="STORE"></div>
+         <div>
+
+
+          <nav class="nav">
+            <a href="/" class="nav_link link">Главная</a>
+            <a href="/Catalog" class="nav_link link">Каталог</a>
+            <a href="/About" class="nav_link link">О&nbsp;нас</a>
+            <a href="#" class="nav_link link trolley">
+            <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+            <lord-icon
+                title="Корзина"
+                src="https://cdn.lordicon.com/slkvcfos.json"
+                trigger="loop-on-hover"
+                colors="primary:#545454,secondary:#242424"
+                style="width:30px;height:30px">
+            </lord-icon> </a>
+          </nav>
+        </div>
+    </header>
+     {% block content %} {% endblock %}
+     <footer class="header-footer footer">
+        <p><br>Контакт центр.<br>+1 (234) 567-89-10 &nbsp; +1 (324) 775-83-56<br>Ежедневно с 9:00 до 22:00 по Московскому времени</p>
+        <p>Интересующие вас вопросы Вы можете написать нам на почту
+            store@store.ru</p>
+        <p>© Ермолаева Елена, 2021</p>
+    </footer>
+</div>
+</body>
+</html>
