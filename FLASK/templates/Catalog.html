@@ -5,7 +5,7 @@
         {% for item in items %}
         <div class="products-Cat">
           <div class="card">
-          <a href="{{item.name}}"  class="link"> <img src="{{ url_for('static',file_name='/img/ImgforCatalog/' +{{item.img}})}}" class="book-Cat"></a>
+          <a href="/Product/{{item.name}}"  class="link"> <img src="{{ url_for('static',filename='/img/ImgforCatalog/' +item.img) }}" class="book-Cat"></a>
           <div class="name">
             <div class="name-value">{{item.name}}</div>
           </div>
@@ -20,4 +20,4 @@
 
 
 
-{% blockend %}
+{% endblock %}

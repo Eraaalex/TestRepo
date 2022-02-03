@@ -10,7 +10,7 @@
 
             {% for product in items %}
              <div class="card_three">
-             <a href="{{product.name}}"  class="link"> <img src="{{ img_for('static', filename='/img/' + product.img }}" class="book-HP"></a>
+             <a href="/Product/{{product.name}}"  class="link"> <img src="{{ url_for('static',filename='/img/ImgforCatalog/' +product.img) }}" class="book-HP"></a>
              <div class="name">
                <div class="name-value">{{product.name}}</div>
              </div>
@@ -20,7 +20,7 @@
     <div class="container_two">
         <div class="sections" id='left'>
           <!--           <img src="img/ImgforCatalog/LouviusVuitton.jpg" class="book-HP"> -->
-            <a href="#"> <img src="{{ url_for('static',filename='/img/ImgForHP/GuidoCrepaxLanternaMagica.jpg') }}" class="section-HP"> </a> # think about it
+            <a href="#"> <img src="{{ url_for('static',filename='/img/ImgForHP/GuidoCrepaxLanternaMagica.jpg') }}" class="section-HP"> </a> <!-- think about it -->
 
           <a class="but-link" href="#">LIMITED EDITION</a>
 

@@ -12,6 +12,7 @@ for i in range(len(descr)):
     products.append(Product(name=name_pr[i], description=descr[i], img=link_img[i]))
 
 products_three=products[:3]
+# print(products[0].description)
 @app.route('/')
 def homepage():
     return render_template('HomePage.html', items = products_three)
@@ -22,7 +23,7 @@ def about():
 #
 @app.route('/Catalog')
 def catalog():
-    return render_template('Catalog.html',items = products)
+    return render_template('Catalog.html', items = products)
 #
 @app.route('/Product/<item>')
 def product(item):
