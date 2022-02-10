@@ -51,5 +51,9 @@ class TestORM(unittest.TestCase):
         ord_line=addOrderLine(order,pr)
         self.assertEqual(OrderHistory.query.one(),ord_line)
 
-
+    def test_addFeedback(self):
+        login='login.com'
+        text='i love this store'
+        fb=addFeedback(login,text)
+        self.assertEqual(Feedback.query.one(),fb)
 

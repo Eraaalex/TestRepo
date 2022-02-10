@@ -3,7 +3,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)  # объект приложения Flask
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///store_3.db' # привязываем базу данных
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///store_2.db' # привязываем базу данных
 db = SQLAlchemy(app)
 
 class Card(db.Model):
@@ -54,8 +54,15 @@ class Product(db.Model):
 
     def __repr__(self):
         return f'{self.id} {self.name}'
-#
-#
+
+class Feedback(db.Model):
+    id=db.Column(db.Integer, primary_key=True)
+    login = db.Column(db.String)
+    # fb=db.relationship('User', backref=db.backref('feedback', lazy=False))
+    text=db.Column(db.String)
+    def __repr__(self):
+        return f'{self.login} {self.text}'
+
 class OrderUser(db.Model):
     id = db.Column(db.Integer, primary_key=True)
 

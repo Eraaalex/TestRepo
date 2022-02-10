@@ -455,7 +455,34 @@ text-align: center;
     height: 15px;
     }
   }
+  .feedbacks{
+  /*outline: 1px solid #d9d9d9;*/
+  margin: 5px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  }
+  .feedback_one{
+  text-align: left;
+  padding-left: 2px;
+  outline: 1px solid #d9d9d9;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 3px;
+  }
 
+  .fb_login{
+    padding: 10px 0 0 20px;
+    margin-bottom: 15px;
+
+  }
+.fb_text{
+  padding-left: 20px;
+  padding-bottom: 15px;
+
+  color: rgba(0,0,0,.3);
+
+}
 @media only screen and (min-width: 461px) and (max-width: 800px) {
 
   .all-products{

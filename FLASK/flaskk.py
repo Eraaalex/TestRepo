@@ -1,5 +1,6 @@
 from flask import Flask, render_template, escape, abort, request
 from ORM.models import *
+from ORM.service import addFeedback
 
 app = Flask(__name__)
 # it's bin
@@ -10,16 +11,23 @@ link_img=['CP Company.jpg','LouviusVuitton.jpg','Lv.jpg','PaulSmith.jpg','Rizzol
 products=[]
 for i in range(len(descr)):
     products.append(Product(name=name_pr[i], description=descr[i], img=link_img[i]))
-
+feedbacks=[]
 products_three=products[:3]
 # print(products[0].description)
 @app.route('/')
 def homepage():
     return render_template('HomePage.html', items = products_three)
 
-@app.route('/About')
+@app.route('/About', methods=['GET', 'POST'])
 def about():
-    return render_template('About.html')
+    if request.method=='POST':
+        login = request.form.get('login')
+        text =request.form.get('review')
+        if login !='' and text!='':
+            # fb = addFeedback(login,text)
+            feedbacks.append(Feedback(login=login,text=text))
+
+    return render_template('About.html', feedbacks=feedbacks)
 #
 @app.route('/Catalog')
 def catalog():

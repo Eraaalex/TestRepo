@@ -1,4 +1,4 @@
-from models import *
+from ORM.models import *
 
 def addCard(number='4732112818833292', valid_thru='09/1977', holder_name='Gavriil Troyepolsky', cvc=143):
     card=Card(number=number, valid_thru=valid_thru, holder_name=holder_name, cvc=cvc)
@@ -27,3 +27,7 @@ def addOrderLine(order_num:OrderUser,product:Product,amount=1):
     order_line=OrderHistory(order=order_num,product=product,amount=amount)
     db.session.add(order_line)
     return order_line
+def addFeedback(login,text= 'the best store in the world'):
+    fb=Feedback(login = login, text=text)
+    db.session.add(fb)
+    return fb

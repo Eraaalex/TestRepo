@@ -1,4 +1,5 @@
 {% extends "Header-Footer.html" %}
+{% block title %} {{item.name}} {% endblock %}
 {% block content %}
        <div class="products">
       <div class="picture_on_page">  <img src="{{ url_for('static',filename='/img/' +item.img) }}" class="book_pr"></div>
