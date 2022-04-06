@@ -23,6 +23,7 @@
 
       </form>
     </div>
+  {% if feedbacks %}
     <div class="feedbacks">
         {% for el in feedbacks %}
         <div class="feedback_one">
@@ -33,7 +34,6 @@
         {% endfor %}
 
     </div>
-
+  {% endif %}
   </div>
   {% endblock %}
-

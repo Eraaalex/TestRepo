@@ -41,7 +41,7 @@ padding-left: 5px;
 }
 
 .footer{height: 50px;
-padding-top: 30px;
+padding-top: 20px;
 }
 
 .header_logo{
@@ -121,7 +121,6 @@ grid-auto-rows: 450px;
 
 }
 .name{
-
   /* outline: 1px solid #FF99FF; */
 }
 .name-value{
@@ -149,7 +148,6 @@ grid-auto-rows: 450px;
 }
 
 .card{
-
   padding: 16px 16px 16px 16px;
   text-align: center;
   padding: 10px;
@@ -177,8 +175,6 @@ max-width: 100%;
 max-height: 100%;
 }
 
-
-
 /* страница товара */
 .products{
   position: relative;
@@ -187,10 +183,12 @@ max-height: 100%;
   width:100%;
   margin: 0;
   margin-top: 20px;
+  padding-bottom: 10px;
   justify-content: center;
 }
 .book{
 width: 100%;
+max-width: 400px;
 }
 .products_About{
   padding-left: 5px;
@@ -198,18 +196,14 @@ width: 100%;
 }
 .picture_on_page{
   width:47%;
-
-}
-.book_pr{
-width:100%;
-max-width:500px;
+  max-width: 600px;
 
 }
 .name-description{
   text-align: center;
-  padding-top:10px;
   background-color: #fff;
   margin-left: 20px;
+  padding-top:5px;
   width:500px;
   height: 300px;
 
@@ -290,6 +284,7 @@ p{
   display: flex;
   flex: column;
   justify-content: center;
+  padding-bottom: 10px;
 }
 .About{
   margin-left: 10px;
@@ -358,11 +353,35 @@ text-align: center;
 .section-HP{
   display: block;
   max-width:500px;
+  width: 100%;
 }
 .opinion-HP{
   margin-top:30px;
   text-align: left;
 }
+
+.feedback_one{
+  outline: 1px solid #d9d9d9;
+  border-radius: 0.25rem;
+  margin:10px auto 10px auto;
+  text-align: left;
+  padding: 5px;
+  border-color: inherit;
+
+    color: #505050;
+    /* margin-right: 20px; */
+
+}
+.fb_text{
+  padding-left: 20px;
+}
+.fb_login{
+  color: #282828;
+  line-height: 2em;
+}
+
+
+
 
   @media only screen and (max-width: 460px){
     .nav_link{
@@ -377,18 +396,12 @@ text-align: center;
     .name-value{
       height: 30px;
     }
-    .container{
-      font-size: 11px;
-    }
+
     .header{
       justify-content: flex-start;
     }
-    .span{
+    .span, .button,.feedback_one, .container{
         font-size: 11px;
-    }
-    .button{
-      font-size: 11px;
-
     }
     .butOnPage{
       font-size: 11px;
@@ -403,9 +416,9 @@ text-align: center;
 
     .picture_on_page{
       width: 80%;
-      max-width: 350px;
+      max-width: 400px;
       /* margin: 0 2% 0 2%; */
-      margin: 0 auto;
+      margin: 0 auto 5px auto;
     }
     .products{
       display: inline-block;
@@ -415,7 +428,7 @@ text-align: center;
       width:95%;
       /* max-height: 300px; */
       font-size: 11px;
-      margin: 0 auto;
+      margin: 0 auto 15px;
       height: auto;
       padding-bottom: 20px;
     }
@@ -454,40 +467,17 @@ text-align: center;
     .header_logo{
     height: 15px;
     }
-  }
-  .feedbacks{
-  /*outline: 1px solid #d9d9d9;*/
-  margin: 5px;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  }
-  .feedback_one{
-  text-align: left;
-  padding-left: 2px;
-  outline: 1px solid #d9d9d9;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  background-color: white;
-  border-radius: 3px;
+    .footer{
+      padding-top: 0px;
+    }
   }
 
-  .fb_login{
-    padding: 10px 0 0 20px;
-    margin-bottom: 15px;
-
-  }
-.fb_text{
-  padding-left: 20px;
-  padding-bottom: 15px;
-
-  color: rgba(0,0,0,.3);
-
-}
 @media only screen and (min-width: 461px) and (max-width: 800px) {
-
+.opinion-HP{
+  font-size: 15px;
+}
   .all-products{
 
-  /* new */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 500px;
@@ -515,17 +505,20 @@ text-align: center;
     width: 90%;
     max-width: 400px;
     /* margin: 0 2% 0 2%; */
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
   }
   .products{
     display: inline-block;
+
   }
 
   .name-description{
     width:95%;
+
+    /* margin-top: 10px; */
     /* max-height: 300px; */
     font-size: 15px;
-    margin: 0 auto;
+    margin: 0 auto 15px;
     height: auto;
     padding-bottom: 20px;
   }
@@ -561,7 +554,9 @@ width: 40%;
 
 }
 
-
+.footer{
+  padding-top: 7px;
+}
 }
 /*
  @media only screen and (min-width: 460px) and (max-width: 768px) {
