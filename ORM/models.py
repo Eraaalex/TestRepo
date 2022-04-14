@@ -3,7 +3,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)  # объект приложения Flask
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///store_2.db' # привязываем базу данных
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///store_4.db' # привязываем базу данных
 db = SQLAlchemy(app)
 
 class Card(db.Model):

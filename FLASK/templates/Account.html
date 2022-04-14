@@ -1,0 +1,25 @@
+{% extends "Header-Footer.html" %}
+{% block title %} Account {% endblock %}
+
+{% block content %}
+
+
+<div class="form_Acc">
+    <button type="button" name="button" class="btnAcc">Sign in</button>
+
+      <form method="post" class="formAbout">
+
+       <input type="text" name="name" placeholder="имя" class="input inpAcc"> <br>
+       <br>
+       <input type="email" name="login" placeholder="почта"  class="input inpAcc" required><br>
+       <br>
+       <input type="text" name="password" placeholder="пароль"  class="input inpAcc" required><br>
+       <br>
+      <div class="container_for_button">
+       <input type="submit" class="btnAbout">
+       <input type="reset" class="btnAbout"></div>
+
+      </form>
+    </div>
+
+{% endblock %}
