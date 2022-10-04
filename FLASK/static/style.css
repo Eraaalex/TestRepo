@@ -3,8 +3,15 @@ body{
   margin: 0;
   overflow-x: hidden;
 }
+li {
+list-style-type: none;
+}
+@font-face{
+font-family: Nexa;
+src: url('Nexa Light.ttf');
+}
 .container{
-font-family:"Montserrat", monospace;
+font-family: Nexa;
 font-weight: 500;
 background-color: #f2f2f2;
 margin:0;
@@ -162,8 +169,9 @@ grid-auto-rows: 450px;
 }
 
 .butInvisible{
-  visibility: hidden;
-  display:block;
+  /*visibility: hidden;*/
+
+  display:none;
   margin: auto;
   margin-top: 5px;
   max-width: 100%;
@@ -171,7 +179,8 @@ grid-auto-rows: 450px;
 }
 
 .products-Cat:hover .butInvisible{
-  visibility: visible;
+  /*visibility: visible;*/
+  display: block;
 }
 .products-Cat img{
 
@@ -273,7 +282,8 @@ p{
 }
 .container_for_button{
   width: 100%;
-
+display: flex;
+flex-direction: space-around;
 }
 .textarea{
   width: 750px;
@@ -435,21 +445,87 @@ text-align: center;
     display: flex;
     flex: column;
     justify-content: center;
+    padding-top: 10px;
     padding-bottom: 10px;
 
+    margin: 0px 10px 0px 10px;
 
-    margin-left: 10px;
-    margin-right: 10px;
+
 
 }
 .inpAcc{
   /* text-transform: uppercase; */
   font-weight: 300;
 }
+/*.slot {
+  border-bottom: 10px double #888;
+  border-top: 3px solid #888;
+  cursor: pointer;
+  float: left;
+  height: 4px;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding-top: 4px;
+  transition: all 0.2s ease 0s;
+  width: 25px;
+}*/
+.HomeContainer{
+  position: relative;
+}
+.btnMenu{
+border: none;
+outline: none;
+background-color: inherit;
+}
+
+.menu_block{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+
+  /* height: 100%; */
+  background-color: #ffffff;
+  /*height:300px; fix it*/
+  position: absolute;
+
+  top:70px;
+  padding-left: 10px;
+  padding-bottom: 6vw;
+}
+.menu_block{
+    z-index: 10;
+}
+.img_for_menu{
+display: block;
+
+ height:40px;
+
+ margin:0;
+ padding: 0;
+ object-fill: cover;
+
+}
+.menu_title{
+font: inherit;
+color: #A4A4A4;
+}
+.category{
+
+}
+
+
 
   @media only screen and (max-width: 460px){
     .nav_link{
       margin-right: auto;
+    }
+    .nav{
+    display: none;
+    }
+    .header{
+    display: flex;
+    gap: 35%;
+
     }
 
     .all-products{
@@ -614,7 +690,7 @@ display: flex;
 justify-content: space-between;
 }
 .btnAbout{
-width: 40%;
+width: 45%;
 
 }
 
@@ -622,6 +698,22 @@ width: 40%;
   padding-top: 7px;
 }
 }
+/*Registratiron*/
+.invisible{
+display: none;
+}
+.container_btn{
+margin: auto;
+display: flex;
+justify-content: center;
+/*width:50%;*/
+
+}
+.btnAcc{
+display: block;
+
+}
+
 /*
  @media only screen and (min-width: 460px) and (max-width: 768px) {
        Start header and Catalog
